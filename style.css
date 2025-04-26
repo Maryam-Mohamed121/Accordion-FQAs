@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 20px;
+  width: 100vw;
+  height: 100vh;
+  background-color: hsl(275, 100%, 97%);
+  background-image: url("/assets/images/background-pattern-desktop.svg");
+  background-repeat: no-repeat;
+  font-family: "Work Sans";
+}
+.container {
+  height: auto;
+  width: 55vw;
+  background-color: hsl(0, 100%, 100%);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.25);
+  border-radius: 20px;
+  padding: 25px;
+}
+.header {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  font-size: 35px;
+  margin-bottom: 20px;
+  color: hsl(292, 42%, 14%);
+}
+.header h1 {
+  margin-left: 15px;
+}
+.accordion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.accordion-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: hover 0.5s ease-in-out;
+  color: hsl(292, 42%, 14%);
+}
+.break-line {
+  width: 95%;
+  background-color: hsl(275, 100%, 97%);
+  height: 2px;
+  margin: 15px;
+}
+
+.accordion-header h3:hover {
+  color: #ad28eb;
+}
+.accordion .accordion-item p {
+  color: hsl(292, 16%, 49%);
+}
+.accordion-hide {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease, opacity 0.3s ease;
+  opacity: 0;
+  margin: 5px 0;
+}
+
+.accordion-show {
+  max-height: 60vh;
+  opacity: 1;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
