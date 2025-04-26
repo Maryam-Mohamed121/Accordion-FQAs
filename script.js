@@ -6,10 +6,10 @@ accordionBtns.forEach((btn) => {
 
     if (answer.classList.contains("accordion-show")) {
       answer.classList.remove("accordion-show");
-      btn.querySelector("img").src = "/assets/images/icon-plus.svg";
+      btn.querySelector("img").src = "./assets/images/icon-plus.svg";
     } else {
       answer.classList.add("accordion-show");
-      btn.querySelector("img").src = "/assets/images/icon-minus.svg";
+      btn.querySelector("img").src = "./assets/images/icon-minus.svg";
     }
   });
 });
